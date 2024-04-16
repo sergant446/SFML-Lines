@@ -28,6 +28,16 @@ public:
 		points[1].color = color;
 	}
 
+	void setPoint0Color(sf::Color newColor) {
+		color = newColor;
+		points[0].color = color;
+	}
+
+	void setPoint1Color(sf::Color newColor) {
+		color = newColor;
+		points[1].color = color;
+	}
+
 	void draw(sf::RenderWindow& window) {
 		window.draw(points, 2, sf::Lines);
 	}
